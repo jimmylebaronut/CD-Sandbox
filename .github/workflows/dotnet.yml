@@ -18,7 +18,7 @@ jobs:
     - name: Repository Dispatch
       uses: peter-evans/repository-dispatch@v3.0.0
       with:
-        token: ${{ secrets.pat }}
+        token: ${{ secrets.PAT }}
         repository: jimmylebaronut/CI-Sandbox
         event-type: devPush
     - uses: actions/checkout@v3
